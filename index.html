@@ -42,10 +42,18 @@
     </header>
 
     <main>
-        <add-note-form></add-note-form> 
-        <!-- <note-item></note-item>
-        <notes-app></notes-app>  -->
+      <nav>
+        <button id="activeNotesButton">Active Notes</button>
+        <button id="archivedNotesButton">Archived Notes</button>
+      </nav>
+      <section id="activeNotesSection">
+        <add-note-form></add-note-form>
         <div id="notesList" class="list"></div>
+      </section>
+      <section id="archivedNotesSection" style="display: none;">
+        <h2>Archived Notes</h2>
+        <div id="archivedNotesList" class="list"></div>
+      </section>
     </main>
 
     <footer>
